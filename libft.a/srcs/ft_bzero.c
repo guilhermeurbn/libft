@@ -1,27 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 16:06:16 by guisanto          #+#    #+#             */
-/*   Updated: 2024/10/29 10:59:39 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/29 13:20:10 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_isprint(int c)
+void *ft_bzero(void *s, size_t n)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	else
-		return (0);
+    size_t i;
+
+    if(!s)
+        return NULL;
+
+    i = 0;
+    while (i < n)
+    {
+        ((unsigned char *)s)[i] = 0;
+        i++;
+    }
+    return (s);
 }
 int main()
 {
-	char c = '\n';
-	printf("%d", ft_isprint(c));
-	return 0;
+    char str[14] = "Hello, World!";
+    ft_bzero(str, 5);
+    int i = 0;
+    while (i < 13)
+    {
+        if (str[i] == '\0')
+            printf("0"); 
+        else
+            printf("%c", str[i]); 
+
+        i++;
+    } 
+    return 0;
 }

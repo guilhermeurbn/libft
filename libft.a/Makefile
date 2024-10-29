@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+         #
+#    By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/28 11:59:07 by guisanto          #+#    #+#              #
-#    Updated: 2024/10/28 14:46:01 by guisanto         ###   ########.fr        #
+#    Updated: 2024/10/29 17:50:28 by guilhermeur      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 CC = gcc
 SRCS_DIR = srcs
-NCLDUDES_DIR = includes
+INCLDUDES_DIR = includes
 
 SRCS = $(SRCS_DIR)\ft_*.c
 

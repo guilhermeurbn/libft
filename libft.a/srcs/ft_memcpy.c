@@ -1,27 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 16:06:16 by guisanto          #+#    #+#             */
-/*   Updated: 2024/10/29 10:59:39 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/29 13:40:29 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/29 13:49:38 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_isprint(int c)
+void *ft_memcpy(void *dest, const void *src, size_t n)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	else
-		return (0);
+    size_t i;
+
+    if (!dest && !src)
+        return (dest);
+    i = 0;
+    while (i < n)
+    {
+        ((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+        i++;
+    }
+    return (dest);
 }
 int main()
 {
-	char c = '\n';
-	printf("%d", ft_isprint(c));
-	return 0;
+    char src[50] = "Hello, World!";
+    char dest[50] = "Goodbye, World!";
+    
+    printf("%s", (char *)ft_memcpy(dest, src, 5));
+    return 0;
 }
+    
