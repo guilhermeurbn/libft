@@ -1,45 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/30 21:04:03 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/31 18:49:50 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/31 18:52:40 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-    void *ft_bzero(void *s, size_t n)
+void *ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+    unsigned char *str1;
+    unsigned char *str2;
     size_t i;
 
-    if(!s)
-        return NULL;
-
+    str1 = (unsigned char *)s1;
+    str2 = (unsigned char *)s2;
     i = 0;
     while (i < n)
     {
-        ((unsigned char *)s)[i] = 0;
+        if (str1[i] != str2[i])
+            return (str1[i] - str2[i]);
         i++;
     }
-    return (s);
+    return (0);
 }
+#include <stdio.h>
 int main()
 {
-    char str[14] = "Hello, World!";
-    ft_bzero(str, 5);
-    int i = 0;
-    while (i < 13)
-    {
-        if (str[i] == '\0')
-            printf("0"); 
-        else
-            printf("%c", str[i]); 
-
-        i++;
-    } 
+    char str1[50] = "Hello, World!";
+    char str2[50] = "Hello, World!";
+    printf("%d\n", ft_memcmp(str1, str2, 5));
     return 0;
 }

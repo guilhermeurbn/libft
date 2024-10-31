@@ -1,45 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/30 21:04:03 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/31 18:29:10 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/31 18:34:05 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-    void *ft_bzero(void *s, size_t n)
+char *ft_strrchr(const char *str, int c)
 {
-    size_t i;
+    int i;
+    char *result;
+    char cc;
 
-    if(!s)
-        return NULL;
-
+    cc = (char)c;
+    result = NULL;
     i = 0;
-    while (i < n)
+    while (str[i])
     {
-        ((unsigned char *)s)[i] = 0;
+        if (str[i] == cc)
+            result = (char *)&str[i];
         i++;
     }
-    return (s);
+    if (str[i] == c)
+        result = (char *)&str[i];
+    return (result);
 }
 int main()
 {
-    char str[14] = "Hello, World!";
-    ft_bzero(str, 5);
-    int i = 0;
-    while (i < 13)
-    {
-        if (str[i] == '\0')
-            printf("0"); 
-        else
-            printf("%c", str[i]); 
-
-        i++;
-    } 
+    char str[50] = "Hello, World!";
+    printf("%s\n", ft_strrchr(str, 'W'));
     return 0;
 }

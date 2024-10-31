@@ -1,45 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/30 21:04:03 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/31 17:40:26 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/31 21:37:16 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-
-    void *ft_bzero(void *s, size_t n)
+char *ft_strchar(const char *str, int c)
 {
-    size_t i;
+    int i;
+    char cc;
 
-    if(!s)
-        return NULL;
-
+    cc = (char)c;
     i = 0;
-    while (i < n)
+    
+    if (!str)
+        return (NULL);
+        
+    while (str[i])
     {
-        ((unsigned char *)s)[i] = 0;
-        i++;
-    }
-    return (s);
+        if (str[i] == cc)
+            return ((char *)&str[i]);
+        i++;    
+    }   
+    if (cc == '\0')
+        return ((char *)&str[i]);
+
+    return (NULL);
 }
 int main()
 {
-    char str[14] = "Hello, World!";
-    ft_bzero(str, 5);
-    int i = 0;
-    while (i < 13)
-    {
-        if (str[i] == '\0')
-            printf("0"); 
-        else
-            printf("%c", str[i]); 
-
-        i++;
-    } 
+    char str[50] = "Hello, World!";
+    printf("%s\n", ft_strchar(str, '\0'));
     return 0;
 }

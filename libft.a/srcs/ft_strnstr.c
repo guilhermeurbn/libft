@@ -1,45 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/30 21:04:03 by guilhermeur      ###   ########.fr       */
+/*   Created: 2024/10/31 18:54:00 by guilhermeur       #+#    #+#             */
+/*   Updated: 2024/10/31 21:53:35 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-    void *ft_bzero(void *s, size_t n)
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
     size_t i;
-
-    if(!s)
-        return NULL;
+    size_t j;
 
     i = 0;
-    while (i < n)
+
+    if (!*needle)
+        return ((char *)haystack);
+    while (haystack[i] && i < len)
     {
-        ((unsigned char *)s)[i] = 0;
+        j = 0;
+        while (needle[j] && haystack[i + j] == needle[j] && i + j < len)
+            j++;
+        if (!needle[j])
+            return ((char *)&haystack[i]);
         i++;
     }
-    return (s);
+    return (NULL);        
 }
 int main()
 {
-    char str[14] = "Hello, World!";
-    ft_bzero(str, 5);
-    int i = 0;
-    while (i < 13)
-    {
-        if (str[i] == '\0')
-            printf("0"); 
-        else
-            printf("%c", str[i]); 
-
-        i++;
-    } 
+    char haystack[50] = "Hello, World!";
+    char needle[50] = "World";
+    printf("%s\n", ft_strnstr(haystack, needle, 12));
     return 0;
 }
