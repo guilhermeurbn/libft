@@ -6,19 +6,18 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 13:29:21 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 14:49:34 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_bzero(void *s, size_t n)
+void    *ft_bzero(void *s, size_t n)
 {
-    size_t i;
+    size_t  i;
 
-    if(!s)
+    if (!s)
         return NULL;
-
     i = 0;
     while (i < n)
     {
