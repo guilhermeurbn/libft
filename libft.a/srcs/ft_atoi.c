@@ -6,7 +6,7 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:54:06 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/31 21:56:23 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/03 12:06:59 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@ char ft_atoi(char *str)
     i = 0;
     sign = 1;
     result = 0;
+    
+    if (!str)
+        return (0);
     while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
         i++;
     if (str[i] == '-' || str[i] == '+')
