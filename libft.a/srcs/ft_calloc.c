@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 12:15:32 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/03 12:31:23 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 11:22:49 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void *calloc(size_t num_elements, size_t element_size)
+void *ft_calloc(size_t num_elements, size_t element_size)
 {
     void *ptr;
     size_t i;

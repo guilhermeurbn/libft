@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/30 21:04:03 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 11:50:19 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-    void *ft_bzero(void *s, size_t n)
+void *ft_bzero(void *s, size_t n)
 {
     size_t i;
 
@@ -35,11 +35,11 @@ int main()
     while (i < 13)
     {
         if (str[i] == '\0')
-            printf("0"); 
+            printf("0");
         else
-            printf("%c", str[i]); 
+            printf("%c", str[i]);
 
         i++;
-    } 
+    }
     return 0;
 }

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:54:06 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/03 12:06:59 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 11:49:20 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char ft_atoi(char *str)
+int ft_atoi(const char *str)
 {
     int i;
     int sign;
@@ -19,7 +19,7 @@ char ft_atoi(char *str)
     i = 0;
     sign = 1;
     result = 0;
-    
+
     if (!str)
         return (0);
     while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
