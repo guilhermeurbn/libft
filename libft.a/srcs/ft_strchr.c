@@ -3,36 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:40:26 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 13:32:09 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 15:19:30 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchar(const char *str, int c)
+char	*ft_strchar(const char *str, int c)
 {
-    int i;
-    char cc;
+	int		i;
+	char	cc;
 
-    cc = (char)c;
-    i = 0;
-    
-    if (!str)
-        return (NULL);
-        
-    while (str[i])
-    {
-        if (str[i] == cc)
-            return ((char *)&str[i]);
-        i++;    
-    }   
-    if (cc == '\0')
-        return ((char *)&str[i]);
-
-    return (NULL);
+	cc = (char)c;
+	i = 0;
+	if (!str)
+		return (NULL);
+	while (str[i])
+	{
+		if (str[i] == cc)
+			return ((char *)&str[i]);
+		i++;
+	}
+	if (cc == '\0')
+		return ((char *)&str[i]);
+	return (NULL);
 }
 /*int main()
 {

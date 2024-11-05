@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+         #
+#    By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/28 11:59:07 by guisanto          #+#    #+#              #
-#    Updated: 2024/11/05 12:49:13 by guilhermeur      ###   ########.fr        #
+#    Updated: 2024/11/05 15:38:15 by guisanto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC = gcc
 SRCS_DIR = srcs
 INCLUDES_DIR = includes
 
-SRCS = $(wildcard $(SRCS_DIR)/*.c)
+SRCS = $(wildcard ft_*.c)
 
 CFLAGS = -Wall -Werror -Wextra -g -I $(INCLUDES_DIR)
 
