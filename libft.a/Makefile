@@ -6,7 +6,7 @@
 #    By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/28 11:59:07 by guisanto          #+#    #+#              #
-#    Updated: 2024/10/29 17:50:28 by guilhermeur      ###   ########.fr        #
+#    Updated: 2024/11/05 12:49:13 by guilhermeur      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,13 @@ NAME = libft.a
 
 CC = gcc
 SRCS_DIR = srcs
-INCLDUDES_DIR = includes
+INCLUDES_DIR = includes
 
-SRCS = $(SRCS_DIR)\ft_*.c
+SRCS = $(wildcard $(SRCS_DIR)/*.c)
 
-CFLAGS = $(CC) -Wall -Werror -Wextra -g -I $(INCLUDES_DIR)
+CFLAGS = -Wall -Werror -Wextra -g -I $(INCLUDES_DIR)
 
-OBJS = $(SRCS:.c = .o)
+OBJS = $(SRCS:.c=.o)
 
 all : $(NAME)
 

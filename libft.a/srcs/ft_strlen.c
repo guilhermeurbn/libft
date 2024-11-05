@@ -6,25 +6,25 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:00:42 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/29 11:01:45 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 13:32:55 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+#include "libft.h"
+
+size_t ft_strlen(const char *s)
 {
-    int i;
+    size_t i;
 
     i = 0;
-    while (str[i])
+    while (s[i])
         i++;
     return (i);
 }
-#include <stdio.h>
-
-int main()
+/*int main()
 {
     char *str = "Hello, World!";
     
-    printf("%d", ft_strlen(str));
+    printf("%zu", ft_strlen(str));
     return 0;
-}
+}*/

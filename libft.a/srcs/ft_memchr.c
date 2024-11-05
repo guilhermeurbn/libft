@@ -6,11 +6,11 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:44:46 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/31 18:48:26 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 13:31:03 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void *ft_memchr(const void *s, int c, size_t n)
 {
@@ -31,9 +31,9 @@ void *ft_memchr(const void *s, int c, size_t n)
     }
     return (NULL);
 }
-int main()
+/*int main()
 {
     char str[50] = "Hello, World!";
     printf("%s\n", (char *)ft_memchr(str, 'W', 8));
     return 0;
-}
+}*/

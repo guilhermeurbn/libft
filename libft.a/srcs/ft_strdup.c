@@ -6,12 +6,11 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 12:32:30 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/04 17:32:43 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 13:32:17 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char *ft_strdup(const char *s)
 {
@@ -34,10 +33,10 @@ char *ft_strdup(const char *s)
     str[i] = '\0';
     return (str);
 }
-int main()
+/*int main()
 {
     char *str = "Hello, World!";
     printf("%s\n", ft_strdup(str));
     return 0;
     free(str);
-}
+}*/

@@ -6,22 +6,15 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 16:03:31 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/10/31 17:07:17 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 13:32:28 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-size_t ft_strlen(const char *str) 
-{
-    size_t len;
-    
-    len = 0;
-    while (str[len]) 
-        len++;
-    return (len);
-}
-size_t ft_strlcat(char *dest, const char *src, size_t size)
+size_t ft_strlen(const char *s);
+
+size_t ft_strlcat(char *dest, char *src, size_t size)
 {
     size_t i;
     size_t j;
@@ -46,11 +39,11 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
     dest[i + j] = '\0';
     return (dest_len + src_len);
 }
-int main()
+/*int main()
 {
    char a[50] = "hel";
    char b[50] = "world";
    
     printf("o tamanho das duas ficam: %zu bytes", ft_strlcat(a, b, 20));
     return 0;
-}
+}*/

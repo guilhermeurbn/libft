@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 11:50:19 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/05 13:29:21 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void *ft_bzero(void *s, size_t n)
 {
@@ -27,7 +27,7 @@ void *ft_bzero(void *s, size_t n)
     }
     return (s);
 }
-int main()
+/*int main()
 {
     char str[14] = "Hello, World!";
     ft_bzero(str, 5);
@@ -42,4 +42,4 @@ int main()
         i++;
     }
     return 0;
-}
+}*/

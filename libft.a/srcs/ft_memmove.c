@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:31:42 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 11:16:47 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/05 13:31:50 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t len)
 {
@@ -35,11 +35,11 @@ void *ft_memmove(void *dest, const void *src, size_t len)
     }
     return (dest);
 }
-int main()
+/*int main()
 {
     char src[50] = "world!";
     char dest[50] = "hello";
 
     printf("%s", (char *)ft_memmove(dest, src, 3));
     return 0;
-}
+}*/

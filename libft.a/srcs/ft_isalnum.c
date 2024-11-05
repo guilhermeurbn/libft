@@ -3,26 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:42:59 by guisanto          #+#    #+#             */
-/*   Updated: 2024/10/28 15:45:09 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/05 13:30:03 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int ft_isalnum(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);
-	else if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+	else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);
 }
-int main()
+/*int main()
 {
 	printf("%d", ft_isalnum('!'));
 	return (0);
-}
+}*/

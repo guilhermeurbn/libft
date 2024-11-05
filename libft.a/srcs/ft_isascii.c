@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:46:40 by guisanto          #+#    #+#             */
-/*   Updated: 2024/10/28 16:05:24 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/05 13:30:34 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isascii(int c)
 {
@@ -17,10 +19,8 @@ int ft_isascii(int c)
 	else
 		return (0);
 }
-
-#include <stdio.h>
-int main()
+/*int main()
 {
 	printf("%d", ft_isascii(']'));
 	return (0);
-}
+}*/

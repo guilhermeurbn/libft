@@ -6,11 +6,11 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:06:16 by guisanto          #+#    #+#             */
-/*   Updated: 2024/10/29 10:59:39 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/05 13:30:56 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int ft_isprint(int c)
 {
@@ -19,9 +19,9 @@ int ft_isprint(int c)
 	else
 		return (0);
 }
-int main()
+/*int main()
 {
 	char c = '\n';
 	printf("%d", ft_isprint(c));
 	return 0;
-}
+}*/

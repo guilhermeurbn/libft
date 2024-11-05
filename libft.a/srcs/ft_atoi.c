@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:54:06 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 11:49:20 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/05 13:28:26 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_atoi(const char *str)
 {
@@ -37,10 +39,9 @@ int ft_atoi(const char *str)
     }
     return (result * sign);
 }
-#include <stdio.h>
-int main()
+/*int main()
 {
     char str[50] = "  -123a1";
     printf("%d\n", ft_atoi(str));
     return 0;
-}
+}*/
