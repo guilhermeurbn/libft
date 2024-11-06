@@ -1,34 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 18:37:30 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/06 15:18:47 by guisanto         ###   ########.fr       */
+/*   Created: 2024/11/06 15:19:47 by guisanto          #+#    #+#             */
+/*   Updated: 2024/11/06 16:53:51 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
+	char	*dest;
 
+	if (!s)
+		return (NULL);
+	dest = (char *)ft_calloc(len + 1, sizeof(char));
+	if (!dest)
+		return NULL;
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
 	i = 0;
-	while ((s1[i] || s2[i]) && i < n)
+	while (i < len && s[start + i])
 	{
-		if ((unsigned char )s1[i] != (unsigned char )s2[i])
-			return (((unsigned char )s1[i] - (unsigned char )s2[i]));
+		dest[i] = s[start + i];
 		i++;
 	}
-	return (0);
+	dest[i] = '\0';
+	return (dest);
 }
-/*int main()
+/* int main()
 {
-    char str1[50] = "Hello, World!";
-    char str2[50] = "Hello, World!";
-    printf("%d\n", ft_strncmp(str1, str2, 5));
-    return 0;
-}*/
+	char s[15] = "hello world!";
+	unsigned int start = 6;
+
+	printf("%s\n", ft_substr(s, start, 5));
+	return (0);
+} */

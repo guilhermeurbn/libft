@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:31:42 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 15:17:34 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/06 12:10:49 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,35 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	if (!dest && !src)
+	size_t			i;
+	unsigned char	*s_dest;
+	unsigned char	*s_src;
+
+	s_dest = (unsigned char *)dest;
+	s_src = (unsigned char *)src;
+	if (!s_dest || !s_src)
 		return (NULL);
-	if (dest < src)
+	if (s_dest > s_src)
 	{
-		while (len > 0)
-		{
-			((char *)dest)[len - 1] = ((char *)src)[len - 1];
-			len--;
-		}
+		while (len--)
+			s_dest[len] = s_src[len];
 	}
 	else
 	{
-		while (len > 0)
+		i = 0;
+		while (i < len)
 		{
-			((char *)dest)[len] = ((char *)src)[len];
-			len--;
+			s_dest[i] = s_src[i];
+			i++;
 		}
 	}
-	return (dest);
+	return (s_dest);
 }
 /*int main()
 {
-    char src[50] = "world!";
-    char dest[50] = "hello";
+    char src[50] = "abcd";
+    char dest[50] = "efgh";
 
-    printf("%s", (char *)ft_memmove(dest, src, 3));
+    printf("%p\n", (char *)ft_memmove(dest, src, 7));
     return 0;
 }*/
