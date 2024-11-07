@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:29:10 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 15:24:05 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:52:13 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,21 @@
 char	*ft_strrchr(const char *str, int c)
 {
 	int		i;
-	char	*result;
 	char	cc;
 
 	cc = (char)c;
-	result = NULL;
-	i = 0;
-	while (str[i])
+	i = ft_strlen(str);	
+	while (i >= 0)
 	{
 		if (str[i] == cc)
-			result = (char *)&str[i];
-		i++;
+			return ((char *)&str[i]);
+		i--;
 	}
-	if (str[i] == c)
-		result = (char *)&str[i];
-	return (result);
+	return (NULL);
 }
-/*int main()
+/* int main()
 {
     char str[50] = "Hello, World!";
-    printf("%s\n", ft_strrchr(str, 'W'));
+    printf("%s\n", ft_strrchr(str, 'o'));
     return 0;
-}*/
+} */

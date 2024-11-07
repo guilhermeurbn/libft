@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/guilhermeurbano/libft-1/libft.a/srcs/output/ft_strchr'
+relocations:     []
+...

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:40:26 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/07 11:12:38 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:24:55 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *str, int c)
 	int		i;
 	char	cc;
 
-	cc = (char)c;
+	cc = (char)c; // convertido para ser tratado de uma forma segura;
 	i = 0;
 	if (!str)
 		return (NULL);
@@ -33,9 +33,9 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)&str[i]);
 	return (NULL);
 }
-/*int main()
+/* int main()
 {
     char str[50] = "Hello, World!";
-    printf("%s\n", ft_strchr(str, '\0'));
+    printf("%s\n", ft_strchr(str, 'e'));
     return 0;
 }*/
