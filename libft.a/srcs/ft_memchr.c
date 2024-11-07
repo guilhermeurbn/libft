@@ -6,11 +6,14 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:44:46 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 15:16:10 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/07 10:39:45 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//me indica a posicao do caractere "x" no intervalo de 0 ate N;
+// me retornando a posicao me bytes;
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

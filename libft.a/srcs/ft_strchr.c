@@ -6,13 +6,15 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:40:26 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 15:19:30 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/07 11:12:38 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//me indica a posicao do caractere "x" no intervalo de 0 ate N;
+//me retornando a posicao;
 
-char	*ft_strchar(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
 	int		i;
 	char	cc;
@@ -34,6 +36,6 @@ char	*ft_strchar(const char *str, int c)
 /*int main()
 {
     char str[50] = "Hello, World!";
-    printf("%s\n", ft_strchar(str, '\0'));
+    printf("%s\n", ft_strchr(str, '\0'));
     return 0;
 }*/

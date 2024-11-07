@@ -1,40 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 18:54:00 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/07 11:47:08 by guisanto         ###   ########.fr       */
+/*   Created: 2024/11/07 10:27:54 by guisanto          #+#    #+#             */
+/*   Updated: 2024/11/07 11:26:54 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	j;
+	char	*dest;
 
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
-	if (!*needle)
-		return ((char *)haystack);
-	while (haystack[i] && i < len)
-	{
-		j = 0;
-		while (needle[j] && haystack[i + j] == needle[j] && i + j < len)
-			j++;
-		if (!needle[j])
-			return ((char *)&haystack[i]);
+	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
-	}
-	return (NULL);
+	j = ft_strlen(s1);
+	while(j > i && ft_strchr(set, s1[j - 1]))
+		j--;
+	dest = ft_substr(s1, i, j - i);
+	return (dest);
 }
-/*int main()
+/* #include <stdio.h>
+int main()
 {
-    char haystack[50] = "Hello, World!";
-    char needle[50] = "World";
-    printf("%s\n", ft_strnstr(haystack, needle, 12));
-    return 0;
-}*/
+	char s1[] = "achello worldac";
+	char set[] = "ac";
+
+	printf("%s\n", ft_strtrim(s1, set));
+	return (0);
+
+} */

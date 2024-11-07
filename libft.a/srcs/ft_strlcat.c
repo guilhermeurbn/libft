@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 16:03:31 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/06 16:56:04 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/07 11:37:06 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,20 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 {
 	size_t	dest_len;
 	size_t	src_len;
+	size_t	i;
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
 
 	if (dest_len >= destsize)
-		dest_len = destsize;
-
-	if (dest_len == destsize)
-		return (destsize + src_len);
-
-	if (src_len < dest_len - destsize)
-		ft_memcpy(dest + dest_len, src, src_len + 1);
-
-	else
-		ft_memcpy(dest + dest_len, src, destsize - dest_len - 1);
-
-	dest[destsize - 1] = '\0';
+		return (src_len + destsize);
+	i = 0;
+	while (src[i] && (dest_len + i) < (destsize - 1))
+	{
+		dest[dest_len + i] = src[i];
+		i++;
+	}
+	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
 /*int main()
