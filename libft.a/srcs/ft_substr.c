@@ -6,7 +6,7 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:19:47 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/07 13:04:49 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/08 10:35:03 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,14 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
-	size_t	s_len;
 	char	*dest;
 
-	if (!s)
+	if (!s || !(dest = malloc(len + 1)))
 		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-	{
-		dest = ft_calloc(1, sizeof(char));
-		if (!dest)
-			return (NULL);
-		return (dest);
-	}
-	dest = ft_calloc(len + 1, sizeof(char));
-	if (!dest)
-		return NULL;
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
 	i = 0;
-	while (i < (s_len - start) && s[start + i])
+	while (i < len && s[start + i])
 	{
 		dest[i] = s[start + i];
 		i++;
@@ -42,9 +32,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 /* int main()
 {
-	char s[15] = "hello world!";
-	unsigned int start = 6;
+	char s[30] = " lorem ipsum dolor sit amet";
+	unsigned int start = 7;
 
-	printf("%s\n", ft_substr(s, start, 5));
+	printf("%s\n", ft_substr(s, start, 10));
 	return (0);
 } */
