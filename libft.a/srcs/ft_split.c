@@ -6,105 +6,110 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:56 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/12 14:48:26 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:42:57 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-int conta_c(const char *palavra, char letra)
+int	conta_c(const char *palavra, char letra)
 {
-    int i;
-    int count;
+	int	i;
+	int	count;
+	int	in_word;
 
-    count = 0;
-    i = 0;
-    while (palavra[i])
-    {
-        if (palavra[i] == letra)
-            count++;
-        i++;
-    }
-    return (count);
+	in_word = 0;
+	count = 0;
+	i = 0;
+	while (palavra[i])
+	{
+		if (palavra[i] != letra)
+		{
+			if (!in_word)
+			{
+				count++;
+				in_word = 1;
+			}
+		}
+		else
+			in_word = 0;
+		i++;
+	}
+	return (count);
 }
-char	*word_corpo(const char *str, int inicio, int fim)
+static void	ft_free(char **strs, int count)
 {
-    char    *word;
-    int     i;
+	int	i;
 
-    i = 0;
-    word = malloc((fim - inicio + 1) * sizeof(char));
-    if (!word)
-        return (NULL);
-    while (inicio < fim)
-    {
-        word[i] = str[inicio];
-        inicio++;
-        i++;
-    }
-    word[i] = '\0';
-    return (word);
+	i = 0;
+	if (!count)
+		return ;
+	while (i < count)
+	{
+		free(strs[i]);
+		i++;
+	}
+	free(strs);
+	*strs = NULL;
 }
-static void *ft_free(char **strs, int count)
-{
-    int i;
 
-    i = 0;
-    while (i < count)
-    {
-        free(strs[i]);
-        i++;
-    }
-    free(strs);
+static int	copy_split(char const *s, char c, char **dest)
+{
+	int	i;
+	int	j;
+	int	t;
+
+	t = 0;
+	i = 0;
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		j = i;
+		while (s[i] && s[i] != c)
+			i++;
+		if (i > j)
+		{
+			dest[t] = ft_substr(s, j, i - j);
+			if (!dest[t])
+				return (ft_free(dest, t), 0);
+			t++;
+		}
+	}
+	dest[t] = NULL;
+	return (1);
 }
 char	**ft_split(char const *s, char c)
 {
 	char	**dest;
-	size_t	i;
-	size_t	j;
-	size_t	len;
-	int		index;
+	int		word_conta;
 
-	i = 0;
-	j = 0;
-	len = ft_strlen(s);
-	index = -1;
-	dest = malloc((conta_c(s, c) + 1) * (sizeof(char *)));
-	if(!s || (!dest))
+	if (!s)
 		return (NULL);
-	while (i <= len)
+	word_conta = conta_c(s, c);
+	dest = (char **)malloc((word_conta + 1) * sizeof(char *));
+	if (!dest)
+		return (NULL);
+	if (!copy_split(s, c, dest))
+		return (ft_free(dest, word_conta), NULL);
+	return (dest);
+}
+int	main(void)
+{
+	char	*s;
+	int		i;
+	char	**result;
+
+	s = "^^^1^^2a,^^^^3^^^^--h^^^^";
+	i = 0;
+	result = ft_split(s, 94);
+	while (result[i])
 	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[i] == c || i == len) && index >= 0)
-		{
-			dest[j++] = word_corpo(s, index, i);
-			if(!dest[j])
-				return (ft_free(dest, j));
-			index = -1;
-		}
+		printf("%s\n", (result[i]));
+		free(result[i]);
 		i++;
 	}
-	dest[j] = NULL;
-	return (dest);
-	free(dest);
+	printf("%s\n", (result[i]));
+	free(result);
+	return (0);
 }
-/* int main ()
-{
-    char s[] = "h elelo e world";
-    int i = 0;
-    char **result;
-
-    result = ft_split(s, 'e');
-
-    while(result[i])
-    {
-        printf("%s", (result[i]));
-        free(result[i]);
-        i++;
-    }
-    // Libera a memória
-    free(result);
-    return (0);
-} */

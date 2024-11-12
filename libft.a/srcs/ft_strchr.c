@@ -19,7 +19,7 @@ char	*ft_strchr(const char *str, int c)
 	int		i;
 	char	cc;
 
-	cc = (char)c; // convertido para ser tratado de uma forma segura;
+	cc = (char)c;
 	i = 0;
 	if (!str)
 		return (NULL);
