@@ -6,7 +6,7 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:59:38 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/08 10:36:57 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/12 10:56:55 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,14 @@ char *ft_strjoin(const char *s1, const char  *s2)
 		return (NULL);
 	len1 = ft_strlen(s1);
 	len2 = ft_strlen(s2);
-	s3 = (char *)ft_calloc((len1 + len2 + 1), sizeof(char));
+	s3 = ft_calloc((len1 + len2 + 1), sizeof(char));
 	if (!s3)
 		return (NULL);
 	i = 0;
 	j = 0;
 	while (s1[i])
 		s3[i++] = s1[j++];
-	j = 0;
+	j = 0; 
 	while(s2[j])
 		s3[i++] = s2[j++];
 	s3[i] = '\0';
