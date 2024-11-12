@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:56 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/08 15:43:25 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/12 14:48:26 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int conta_c(const char *palavra, char letra)
     while (palavra[i])
     {
         if (palavra[i] == letra)
-            count++; 
-        i++;  
+            count++;
+        i++;
     }
     return (count);
 }
@@ -32,7 +32,7 @@ char	*word_corpo(const char *str, int inicio, int fim)
 {
     char    *word;
     int     i;
-        
+
     i = 0;
     word = malloc((fim - inicio + 1) * sizeof(char));
     if (!word)
@@ -57,7 +57,6 @@ static void *ft_free(char **strs, int count)
         i++;
     }
     free(strs);
-    return (NULL);
 }
 char	**ft_split(char const *s, char c)
 {
@@ -96,7 +95,7 @@ char	**ft_split(char const *s, char c)
     char s[] = "h elelo e world";
     int i = 0;
     char **result;
-    
+
     result = ft_split(s, 'e');
 
     while(result[i])
