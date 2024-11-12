@@ -46,33 +46,50 @@ char	*word_corpo(const char *str, int inicio, int fim)
     word[i] = '\0';
     return (word);
 }
-char **ft_split(char const *s, char c)
+static void *ft_free(char **strs, int count)
 {
-    char    **dest;
-    size_t  i;
-    size_t  j;
-    size_t  len;
-    int     index;
-    
+    int i;
+
     i = 0;
-    j = 0;
-    len = ft_strlen(s);
-    index = -1;
-    if (!s || !(dest =  malloc((conta_c(s, c) + 2) * sizeof(char *))))
-        return (NULL);
-    while (i <= len)
+    while (i < count)
     {
-        if (s[i] != c && index < 0)
-            index = i;
-        else if ((s[i] == c || i == len) && index >= 0)
-        {
-            dest[j++] = word_corpo(s, index, i);
-            index = -1;
-        }
+        free(strs[i]);
         i++;
     }
-    dest[j] = NULL;
-    return (dest);
+    free(strs);
+    return (NULL);
+}
+char	**ft_split(char const *s, char c)
+{
+	char	**dest;
+	size_t	i;
+	size_t	j;
+	size_t	len;
+	int		index;
+
+	i = 0;
+	j = 0;
+	len = ft_strlen(s);
+	index = -1;
+	dest = malloc((conta_c(s, c) + 1) * (sizeof(char *)));
+	if(!s || (!dest))
+		return (NULL);
+	while (i <= len)
+	{
+		if (s[i] != c && index < 0)
+			index = i;
+		else if ((s[i] == c || i == len) && index >= 0)
+		{
+			dest[j++] = word_corpo(s, index, i);
+			if(!dest[j])
+				return (ft_free(dest, j));
+			index = -1;
+		}
+		i++;
+	}
+	dest[j] = NULL;
+	return (dest);
+	free(dest);
 }
 /* int main ()
 {
