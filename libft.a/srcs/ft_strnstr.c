@@ -6,35 +6,38 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:54:00 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/07 12:09:14 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/13 17:03:09 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *str, const char *sub, size_t len)
 {
 	size_t	i;
 	size_t	j;
-
+	
 	i = 0;
-	if (!*needle)
-		return ((char *)haystack);
-	while (haystack[i] && i < len)
-	{
+	if(!*sub)
+		return ((char *)str);
+	while (i < len && str[i])
+	{	
 		j = 0;
-		while (needle[j] && haystack[i + j] == needle[j] && i + j < len)
-			j++;
-		if (!needle[j])
-			return ((char *)&haystack[i]);
+		while(sub[j] && str[i + j] == sub[j] && i + j < len)
+		{
+            j++;
+        if (!sub[j])
+            return ((char *)&str[i]);
+		}
 		i++;
 	}
-	return (NULL);
+	return (NULL);	
 }
-/*int main()
+/* int main()
 {
-    char haystack[50] = "Hello, World!";
-    char needle[50] = "World";
-    printf("%s\n", ft_strnstr(haystack, needle, 12));
-    return 0;
-}*/
+	char *str = "hello";
+	char *sub = "ell";
+
+	printf("%s\n", ft_strnstr(str, sub, 5));
+	return (0);
+} */

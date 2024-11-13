@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:31:42 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 11:35:09 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:49:35 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
-
+//basicamente copia sem sobrepor
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	size_t			i;

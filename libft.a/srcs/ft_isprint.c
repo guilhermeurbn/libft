@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:06:16 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/05 15:14:59 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:16:49 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//verifica se é um printable
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)

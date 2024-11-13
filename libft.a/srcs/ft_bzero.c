@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 11:26:28 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:36:10 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_bzero(void *s, size_t n)
+//transformando n bytes da str em 0;
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
 
@@ -22,7 +22,6 @@ void	*ft_bzero(void *s, size_t n)
 		((unsigned char *)s)[i] = 0;
 		i++;
 	}
-	return (s);
 }
 /*int main()
 {

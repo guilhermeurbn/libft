@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:42:59 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/05 15:13:31 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:13:00 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//verifica se é um numero ou uma letra do alfabeto
 int	ft_isalnum(int c)
 {
 	if (c >= 48 && c <= 57)

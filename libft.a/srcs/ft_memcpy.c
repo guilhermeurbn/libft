@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 13:40:29 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 15:16:59 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:31:45 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//unsigned char pq mexemos com bytes por bytes, logo convertemos
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;

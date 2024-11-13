@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 12:15:32 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 15:13:15 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:40:05 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main()
 	int i = 0;
 	while (i < 10)
 	{
-		printf("%hhd", str[i]);//hhd is the format specifier for char
+		printf("%hhd", str[i]);//hhd é um formato especifico para o char
 		i++;
 	}
 	return 0;

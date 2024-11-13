@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:29:39 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/05 15:14:48 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 17:16:53 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//verifica se esta entre 0 e 9
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
