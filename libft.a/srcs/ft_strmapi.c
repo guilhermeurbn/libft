@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t		i;
+	size_t	i;
 	char	*dest;
 
 	if (!s || !(f))
@@ -24,7 +24,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!dest)
 		return (NULL);
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		dest[i] = f(i, s[i]);
 		i++;
@@ -46,7 +46,7 @@ char	lower(unsigned int i, char c)
 		return (c + 32);
 	return (c);
 }
-int main()
+int	main(void)
 {
 	char *a = "HELLO";
 	char *result;

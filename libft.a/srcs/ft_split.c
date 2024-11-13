@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:56 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/12 18:42:57 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 11:16:51 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	conta_c(const char *palavra, char letra)
 	}
 	return (count);
 }
+
 static void	ft_free(char **strs, int count)
 {
 	int	i;
@@ -79,6 +80,7 @@ static int	copy_split(char const *s, char c, char **dest)
 	dest[t] = NULL;
 	return (1);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**dest;
@@ -94,7 +96,7 @@ char	**ft_split(char const *s, char c)
 		return (ft_free(dest, word_conta), NULL);
 	return (dest);
 }
-int	main(void)
+/* int	main(void)
 {
 	char	*s;
 	int		i;
@@ -112,4 +114,4 @@ int	main(void)
 	printf("%s\n", (result[i]));
 	free(result);
 	return (0);
-}
+} */

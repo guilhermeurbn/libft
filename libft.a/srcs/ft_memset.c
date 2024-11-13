@@ -6,18 +6,16 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:02:47 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/06 11:01:47 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 11:26:36 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//completa a memoria com a constante C.
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t	i;
 
-	if (!b)
-		return (NULL);
 	i = 0;
 	while (i < len)
 	{

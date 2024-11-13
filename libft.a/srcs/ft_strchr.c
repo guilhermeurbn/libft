@@ -1,18 +1,19 @@
-		/* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:40:26 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/07 12:24:55 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/13 11:27:01 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//me indica a posicao do caractere "x" no intervalo de 0 ate N;
-//me retornando a posicao;
+
+// me indica a posicao do caractere "x" no intervalo de 0 ate N;
+// me retornando a posicao;
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -21,8 +22,6 @@ char	*ft_strchr(const char *str, int c)
 
 	cc = (char)c;
 	i = 0;
-	if (!str)
-		return (NULL);
 	while (str[i])
 	{
 		if (str[i] == cc)
@@ -35,7 +34,7 @@ char	*ft_strchr(const char *str, int c)
 }
 /* int main()
 {
-    char str[50] = "Hello, World!";
-    printf("%s\n", ft_strchr(str, 'e'));
-    return 0;
+	char str[50] = "Hello, World!";
+	printf("%s\n", ft_strchr(str, 'e'));
+	return (0);
 }*/

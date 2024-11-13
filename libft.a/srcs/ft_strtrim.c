@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:27:54 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/07 11:26:54 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 11:16:20 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
 	j = ft_strlen(s1);
-	while(j > i && ft_strchr(set, s1[j - 1]))
+	while (j > i && ft_strchr(set, s1[j - 1]))
 		j--;
 	dest = ft_substr(s1, i, j - i);
 	return (dest);

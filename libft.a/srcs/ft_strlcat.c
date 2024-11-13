@@ -20,7 +20,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
-
 	if (dest_len >= destsize)
 		return (src_len + destsize);
 	i = 0;
@@ -38,5 +37,5 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	char b[50] = "world";
 
 	printf("o tamanho das duas ficam: %zu bytes", ft_strlcat(a, b, 4));
-	return 0;
+	return (0);
 }*/

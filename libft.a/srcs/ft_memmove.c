@@ -6,11 +6,12 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:31:42 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/06 12:10:49 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/13 11:35:09 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
@@ -20,8 +21,8 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 
 	s_dest = (unsigned char *)dest;
 	s_src = (unsigned char *)src;
-	if (!s_dest || !s_src)
-		return (NULL);
+	if (s_dest == s_src || len == 0)
+		return (dest);
 	if (s_dest > s_src)
 	{
 		while (len--)
@@ -38,11 +39,12 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	return (s_dest);
 }
-/*int main()
+/* int main()
 {
-    char src[50] = "abcd";
-    char dest[50] = "efgh";
+    char src[50] = "\0";
+    char dest[50] = "\0";
 
     printf("%p\n", (char *)ft_memmove(dest, src, 7));
+	printf("%p\n", (char *)memmove(dest, src, 7));
     return 0;
-}*/
+} */
