@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:56 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/14 12:11:03 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:50:15 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

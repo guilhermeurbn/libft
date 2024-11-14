@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:37:30 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/07 14:17:15 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:50:35 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

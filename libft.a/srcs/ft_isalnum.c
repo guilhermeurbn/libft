@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:42:59 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/13 17:13:00 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:49:43 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

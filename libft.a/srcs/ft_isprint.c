@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:06:16 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/13 17:16:49 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:49:53 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

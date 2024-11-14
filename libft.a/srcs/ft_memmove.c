@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:31:42 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 17:49:35 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:50:07 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:19:47 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/14 11:41:28 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:50:45 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

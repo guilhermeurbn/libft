@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:53:36 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 17:36:10 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:49:37 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

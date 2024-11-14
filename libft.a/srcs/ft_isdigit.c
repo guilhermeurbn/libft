@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:29:39 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/13 17:16:53 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:49:50 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

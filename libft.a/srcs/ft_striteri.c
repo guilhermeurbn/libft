@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:59:55 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/14 10:45:41 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:50:21 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

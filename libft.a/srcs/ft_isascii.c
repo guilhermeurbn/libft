@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:46:40 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/13 17:14:04 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:49:47 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

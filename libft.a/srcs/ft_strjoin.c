@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:59:38 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/14 11:46:05 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:50:24 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

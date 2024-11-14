@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/28 11:59:07 by guisanto          #+#    #+#              #  
-#    Updated: 2024/11/05 15:38:15 by guisanto         ###   ########.fr        #
+#    Created: 2024/11/14 14:50:55 by guisanto          #+#    #+#              #
+#    Updated: 2024/11/14 14:51:00 by guisanto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,8 +49,6 @@ SRCS	= ft_isalpha.c \
 	   ft_putstr_fd.c \
 	   ft_putendl_fd.c \
 	   ft_putnbr_fd.c
-
-CFLAGS = -Wall -Werro
 
 CFLAGS = -Wall -Werror -Wextra -g -I $(INCLUDES_DIR)
 

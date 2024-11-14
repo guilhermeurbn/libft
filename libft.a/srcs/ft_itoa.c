@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 15:48:06 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/14 12:46:38 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 13:57:59 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,11 @@ char	*ft_itoa(int n)
 	}
 	return (dest);
 }
-int main()
+/* int main()
 {
 	int dest = 123;
-	
+
 	printf("%s\n", ft_itoa(dest));
 	printf("%s\n", ft_itoa(dest));
 	return (0);
-}
+} */

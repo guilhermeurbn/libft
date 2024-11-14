@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
+/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:44:46 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 17:44:51 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 14:50:00 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
