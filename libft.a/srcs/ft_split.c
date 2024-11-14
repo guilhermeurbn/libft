@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:56 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 11:16:51 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/14 12:11:03 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,9 +102,9 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	char	**result;
 
-	s = "^^^1^^2a,^^^^3^^^^--h^^^^";
+	s = "hello,hello,hello";
 	i = 0;
-	result = ft_split(s, 94);
+	result = ft_split(s, ',');
 	while (result[i])
 	{
 		printf("%s\n", (result[i]));

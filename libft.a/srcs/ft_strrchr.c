@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:29:10 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 11:19:12 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:43:02 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//localizar a última ocorrência de um caractere em uma string
 char	*ft_strrchr(const char *str, int c)
 {
 	int		i;

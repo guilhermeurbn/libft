@@ -6,7 +6,7 @@
 /*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:59:55 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/13 17:53:40 by guilhermeur      ###   ########.fr       */
+/*   Updated: 2024/11/14 10:45:41 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-static void upper(unsigned int i, char *c)
+/* static void upper(unsigned int i, char *c)
 {//coloca o i para ser "usado"
 	(void)i;
 	if (*c >= 'a' && *c <= 'z')
@@ -36,4 +36,4 @@ int main()
 	ft_striteri(str, upper);
 	printf("%s", str);
 	return (0);
-}
+} */

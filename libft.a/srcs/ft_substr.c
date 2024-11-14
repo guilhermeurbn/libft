@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:19:47 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/12 18:21:52 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:41:28 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 /* int main()
 {
-	char s[30] = " lorem ipsum dolor sit amet";
-	unsigned int start = 7;
+	char s[30] = "hello,wordl!";
+	unsigned int start = 6;
 
 	printf("%s\n", ft_substr(s, start, 10));
 	return (0);

@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 12:32:30 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/05 15:20:07 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:15:29 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//serve para duplicar uma string
 char	*ft_strdup(const char *s)
 {
 	char	*str;

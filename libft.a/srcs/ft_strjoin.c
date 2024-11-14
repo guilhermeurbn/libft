@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:59:38 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/13 11:16:00 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:46:05 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//concatenar tudo na s3
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	int		i;

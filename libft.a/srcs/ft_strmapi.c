@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 12:56:51 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/11 13:57:06 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/14 12:47:10 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//aplica uma funcao 'f' a cada caractere da da string
+//resultando numa nova string modificada.
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	i;
@@ -32,7 +33,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	dest[i] = '\0';
 	return (dest);
 }
-/* char	upper(unsigned int i, char c)
+/* 
+char	upper(unsigned int i, char c)
 {
 	(void)i;
 	if (c >= 'a' && c <= 'z')

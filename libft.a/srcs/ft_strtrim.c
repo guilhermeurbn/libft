@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guilhermeurbano <guilhermeurbano@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:27:54 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/13 11:16:20 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:48:36 by guilhermeur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//remove o "set" do inicio e do fim
+//cria um dest com a nova string sem os "set"
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
