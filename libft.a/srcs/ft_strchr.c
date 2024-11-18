@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 17:40:26 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/13 11:27:01 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/18 11:49:30 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strchr(const char *str, int c)
 			return ((char *)&str[i]);
 		i++;
 	}
-	if (cc == '\0')
+	if (str[i] == '\0' && cc == '\0')
 		return ((char *)&str[i]);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 16:03:31 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/07 11:37:06 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/18 11:55:02 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	size_t	src_len;
 	size_t	i;
 
-	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
+	if (destsize == 0)
+		return (src_len);
+	dest_len = ft_strlen(dest);
 	if (dest_len >= destsize)
 		return (src_len + destsize);
 	i = 0;

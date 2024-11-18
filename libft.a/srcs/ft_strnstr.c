@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:54:00 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/14 14:01:01 by guisanto         ###   ########.fr       */
+/*   Updated: 2024/11/18 11:59:27 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strnstr(const char *str, const char *sub, size_t len)
 	i = 0;
 	if (!*sub)
 		return ((char *)str);
+	if (!len)
+		return (NULL);
 	while (i < len && str[i])
 	{
 		j = 0;
