@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:56 by guilhermeur       #+#    #+#             */
-/*   Updated: 2024/11/14 14:50:15 by guisanto         ###   ########.fr       */
+/*   Updated: 2025/01/12 20:32:57 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,22 +89,22 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	word_conta = conta_c(s, c);
-	dest = (char **)malloc((word_conta + 1) * sizeof(char *));
+	dest = malloc((word_conta + 1) * sizeof(char *));
 	if (!dest)
 		return (NULL);
 	if (!copy_split(s, c, dest))
 		return (ft_free(dest, word_conta), NULL);
 	return (dest);
 }
-/* int	main(void)
+int	main(void)
 {
 	char	*s;
 	int		i;
 	char	**result;
 
-	s = "hello,hello,hello";
+	s = "13 14 12 17";
 	i = 0;
-	result = ft_split(s, ',');
+	result = ft_split(s, 32);
 	while (result[i])
 	{
 		printf("%s\n", (result[i]));
@@ -114,4 +114,4 @@ char	**ft_split(char const *s, char c)
 	printf("%s\n", (result[i]));
 	free(result);
 	return (0);
-} */
+}
