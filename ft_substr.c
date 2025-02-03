@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:19:47 by guisanto          #+#    #+#             */
-/*   Updated: 2024/11/14 14:50:45 by guisanto         ###   ########.fr       */
+/*   Updated: 2025/01/26 22:21:20 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 /* int main()
 {
-	char s[30] = "hello,wordl!";
+	char s[30] = "hello,world!";
 	unsigned int start = 6;
 
 	printf("%s\n", ft_substr(s, start, 10));

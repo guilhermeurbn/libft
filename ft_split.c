@@ -6,7 +6,7 @@
 /*   By: guisanto <guisanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 10:37:56 by guilhermeur       #+#    #+#             */
-/*   Updated: 2025/01/12 20:32:57 by guisanto         ###   ########.fr       */
+/*   Updated: 2025/01/21 13:53:26 by guisanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ char	**ft_split(char const *s, char c)
 		return (ft_free(dest, word_conta), NULL);
 	return (dest);
 }
-int	main(void)
+/* int	main(void)
 {
 	char	*s;
 	int		i;
@@ -114,4 +114,4 @@ int	main(void)
 	printf("%s\n", (result[i]));
 	free(result);
 	return (0);
-}
+}*/
